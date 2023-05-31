@@ -1,1 +1,1 @@
-# link-shortener-server
+# link-shotener
