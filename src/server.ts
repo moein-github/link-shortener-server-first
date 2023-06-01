@@ -13,7 +13,10 @@ async function bootstrap() {
   await loader(app);
 
   // Listening to the desired port
-  app.listen(port, () => logger.info(`Server runnnig on port ${port}`));
+  app.listen(port, () => {
+    logger.info(`Server runnnig on port (${port})`);
+    logger.info(`App mode is (${process.env.NODE_ENV})`);
+  });
 }
 
 bootstrap();

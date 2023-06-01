@@ -10,7 +10,7 @@ const envPath =
 config({ path: envPath });
 
 export default {
-  port: process.env.PORT || 8000,
+  port: process.env.PORT || 3000,
   loggerPath: join(__dirname, '../../logs/info.log'),
   mongodbUrl:
     process.env.MONGODB_URL || 'mongodb://localhost:27017/link-shortener',
