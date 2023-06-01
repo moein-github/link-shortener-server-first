@@ -1,6 +1,7 @@
 import { Express } from 'express';
 
 import express from './express';
+import { logger } from '../utils';
 import connect_db from './connect_db';
 
 export default async (app: Express) => {
@@ -8,5 +9,5 @@ export default async (app: Express) => {
   express(app);
 
   // Connect to db
-  await connect_db();
+  // await connect_db();
 };
