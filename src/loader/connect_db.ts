@@ -1,16 +1,15 @@
-import { connect } from 'mongoose';
+// import { connect } from 'mongoose';
 
-import configs from '../configs';
-import { logger } from '../utils';
+// import configs from '../configs';
+// import { logger } from '../utils';
 
-export default async () => {
-  try {
-    const url = configs.mongodbUrl;
-    await connect(url);
-    logger.info(`db connected to ${url}`);
-  } catch (err) {
-    logger.error(err);
-    logger.error('Database could not be connected');
-    process.exit(1);
-  }
-};
+// export default async () => {
+//   try {
+//     await connect(configs.mongodbUrl);
+//     logger.info('mongo db connected');
+//   } catch (err) {
+//     logger.error(err);
+//     logger.error('Database could not be connected');
+//     process.exit(1);
+//   }
+// };

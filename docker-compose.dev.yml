@@ -10,4 +10,5 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
+      - MONGODB_URL=mongodb://mongo-user:mongo-pass@mongo:27017/link-shortener?authSource=admin
     command: npm run start:dev
